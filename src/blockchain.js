@@ -149,7 +149,7 @@ class Blockchain {
 
                 const block = new BlockClass.Block({star: star, owner: address });
 
-                const res = await this._addBlock( block );
+                const res = await this._addBlock(block);
 
                 resolve(res);
 
@@ -240,7 +240,7 @@ class Blockchain {
                     });
                 }
 
-                if (i = 0) continue;
+                if (i === 0) continue;
 
                 const previousBlock = this.chain[i - 1];
                 if (currentBlock.previousBlockHash !== previousBlock.hash) {
