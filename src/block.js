@@ -41,7 +41,6 @@ class Block {
             this.hash = null;
 
             const validHash = SHA256( JSON.stringify(this) ).toString();
-            this.hash = validHash;
 
             resolve(currentHash === validHash);
         });
